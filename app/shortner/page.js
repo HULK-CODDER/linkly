@@ -25,7 +25,7 @@ const shortner = () => {
             .then(response => response.json())
             .then(result => {
                 if(result.success){
-                    setgenerated(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`)
+                    setgenerated(`https://linkly-xi-coral.vercel.app//${shorturl}`)
                     seturl("")
                     setshorturl("")
                 }
